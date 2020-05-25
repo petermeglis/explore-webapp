@@ -15,4 +15,4 @@
 
 <br>
 
-<%= image_tag google_map([ @event.latitude, @event.longitude ].join(',')) %>
+<%= render 'maps/map', event: @event %>
