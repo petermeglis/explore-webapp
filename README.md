@@ -1,6 +1,10 @@
 # explore-webapp
 Webapp portion of the Explore App
 
+# Tips
+Source bundle
+`git archive -v -o explore-webapp.zip --format=zip HEAD`
+
 # Rails README
 
 This README would normally document whatever steps are necessary to get the
