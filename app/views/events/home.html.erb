@@ -1,0 +1,9 @@
+<br>
+
+<%= link_to "All Events", events_path %>
+
+<br>
+
+<% if @events.length > 0 %>
+  <%= render 'maps/map', events: @events, most_recent_event: @most_recent_event %>
+<% end %>

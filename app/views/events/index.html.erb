@@ -28,4 +28,11 @@
 
 <br>
 
+<%= link_to 'Home', home_path %>
 <%= link_to 'New Event', new_event_path %>
+
+<br>
+
+<% if @events.length > 0 %>
+  <%= render 'maps/map', events: @events, most_recent_event: @most_recent_event %>
+<% end %>

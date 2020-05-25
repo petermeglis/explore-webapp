@@ -1,10 +1,16 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
+  def home
+    @events = Event.all
+    @most_recent_event = Event.last
+  end
+
   # GET /events
   # GET /events.json
   def index
     @events = Event.all
+    @most_recent_event = Event.last
   end
 
   # GET /events/1
