@@ -16,7 +16,6 @@ class EventsTest < ApplicationSystemTestCase
 
     fill_in "Latitude", with: @event.latitude
     fill_in "Longitude", with: @event.longitude
-    fill_in "Timestamp", with: @event.timestamp
     click_on "Create Event"
 
     assert_text "Event was successfully created"
@@ -29,7 +28,6 @@ class EventsTest < ApplicationSystemTestCase
 
     fill_in "Latitude", with: @event.latitude
     fill_in "Longitude", with: @event.longitude
-    fill_in "Timestamp", with: @event.timestamp
     click_on "Update Event"
 
     assert_text "Event was successfully updated"

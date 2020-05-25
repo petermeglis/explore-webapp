@@ -17,7 +17,7 @@ class EventsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create event" do
     assert_difference('Event.count') do
-      post events_url, params: { event: { latitude: @event.latitude, longitude: @event.longitude, timestamp: @event.timestamp } }
+      post events_url, params: { event: { latitude: @event.latitude, longitude: @event.longitude } }
     end
 
     assert_redirected_to event_url(Event.last)
@@ -34,7 +34,7 @@ class EventsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update event" do
-    patch event_url(@event), params: { event: { latitude: @event.latitude, longitude: @event.longitude, timestamp: @event.timestamp } }
+    patch event_url(@event), params: { event: { latitude: @event.latitude, longitude: @event.longitude } }
     assert_redirected_to event_url(@event)
   end
 

@@ -15,7 +15,7 @@
   <tbody>
     <% @events.each do |event| %>
       <tr>
-        <td><%= event.timestamp %></td>
+        <td><%= event.created_at %></td>
         <td><%= event.latitude %></td>
         <td><%= event.longitude %></td>
         <td><%= link_to 'Show', event %></td>

@@ -1,6 +1,6 @@
 class Event
   include Mongoid::Document
-  field :timestamp, type: Timestamp
-  field :latitude, type: String
-  field :longitude, type: String
+  include Mongoid::Timestamps
+  field :latitude, type: Float
+  field :longitude, type: Float
 end
